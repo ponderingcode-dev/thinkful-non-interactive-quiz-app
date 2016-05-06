@@ -10,23 +10,105 @@
     </head>
     <body>
         <div class="parentContainer">
-            <div class="childContainer">
+            <div id="questions" class="childContainer">
                 <h1>JavaScript Quiz</h1>
-                <h3>1. Is JavaScript compiled or interpreted?</h3>
-                <div>
-                    <div class="block">
-                        <input id="radBtn0" type="radio" value="compiled" name="group0"/>
-                        <label for="radBtn0">Compiled</label>
+                <div id="question0">
+                    <h3>1. Is JavaScript compiled or interpreted?</h3>
+                    <div>
+                        <div class="block">
+                            <input id="radBtn0" type="radio" value="value0" name="group0"/>
+                            <label for="radBtn0">Compiled</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn1" type="radio" value="value1" name="group0"/>
+                            <label for="radBtn1">Interpreted</label>
+                        </div>
                     </div>
-                    <div class="block">
-                        <input id="radBtn1" type="radio" value="Interpreted" name="group0"/>
-                        <label for="radBtn1">Interpreted</label>
+                </div>
+                <div id="question1" class="hidden">
+                    <h3>2. In JavaScript, what is the result of [] + []?</h3>
+                    <div>
+                        <div class="block">
+                            <input id="radBtn0" type="radio" value="value0" name="group0"/>
+                            <label for="radBtn0">""</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn1" type="radio" value="value1" name="group0"/>
+                            <label for="radBtn1">Operator '+' cannot be applied to operands of type '[]' and '[]'</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="question2" class="hidden">
+                    <h3>3. In JavaScript, what is the result of [] + {}?</h3>
+                    <div>
+                        <div class="block">
+                            <input id="radBtn0" type="radio" value="value0" name="group0"/>
+                            <label for="radBtn0">0</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn1" type="radio" value="value1" name="group0"/>
+                            <label for="radBtn1">undefined</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn2" type="radio" value="value2" name="group0"/>
+                            <label for="radBtn2">[object Object]</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn3" type="radio" value="value3" name="group0"/>
+                            <label for="radBtn3">NaN</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="question3" class="hidden">
+                    <h3>4. In JavaScript, what is the result of {} + []?</h3>
+                    <div>
+                        <div class="block">
+                            <input id="radBtn0" type="radio" value="value0" name="group0"/>
+                            <label for="radBtn0">0</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn1" type="radio" value="value1" name="group0"/>
+                            <label for="radBtn1">undefined</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn2" type="radio" value="value2" name="group0"/>
+                            <label for="radBtn2">[object Object]</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn3" type="radio" value="value3" name="group0"/>
+                            <label for="radBtn3">NaN</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="question4" class="hidden">
+                    <h3>5. In JavaScript, what is the result of {} + {}</h3>
+                    <div>
+                        <div class="block">
+                            <input id="radBtn0" type="radio" value="value0" name="group0"/>
+                            <label for="radBtn0">0</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn1" type="radio" value="value1" name="group0"/>
+                            <label for="radBtn1">undefined</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn2" type="radio" value="value2" name="group0"/>
+                            <label for="radBtn2">[object Object]</label>
+                        </div>
+                        <div class="block">
+                            <input id="radBtn3" type="radio" value="value3" name="group0"/>
+                            <label for="radBtn3">NaN</label>
+                        </div>
                     </div>
                 </div>
                 <button id="btnNext" class="next">next</button>
                 <div class="parentContainer">
                     <p class="progress">Question 1 of 5</p>
                 </div>
+            </div>
+            <div id="results" class="childContainer hidden">
+                <h3>Your Score:</h3>
+                <p id="score">100!</p>
             </div>
         </div>
     </body>

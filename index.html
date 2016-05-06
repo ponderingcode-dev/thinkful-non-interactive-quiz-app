@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Shopping List</title>
+        <title>JSQuiz</title>
         <link rel="stylesheet" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
@@ -11,20 +11,21 @@
     <body>
         <div class="parentContainer">
             <div class="childContainer">
-                <h2>Shopping List</h2>
-                <form>
-                    <input type="text" value="" placeholder="new item" size="32">
-                    <button type="submit"><i class="fa fa-plus" style="font-size: 12px; padding-top: 4px;" aria-hidden="true"></i></button>
-                </form>
+                <h1>JavaScript Quiz</h1>
+                <h3>1. Is JavaScript compiled or interpreted?</h3>
                 <div>
-                    <ul>
-                        <li>
-                            <i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;lettuce&nbsp;&nbsp;<i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <i class="fa fa-square-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;tomatoes&nbsp;&nbsp;<i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </li>
-                    </ul>
+                    <div class="block">
+                        <input id="radBtn0" type="radio" value="compiled" name="group0"/>
+                        <label for="radBtn0">Compiled</label>
+                    </div>
+                    <div class="block">
+                        <input id="radBtn1" type="radio" value="Interpreted" name="group0"/>
+                        <label for="radBtn1">Interpreted</label>
+                    </div>
+                </div>
+                <button id="btnNext" class="next">next</button>
+                <div class="parentContainer">
+                    <p class="progress">Question 1 of 5</p>
                 </div>
             </div>
         </div>
